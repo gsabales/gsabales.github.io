@@ -31,7 +31,7 @@
 }
 
 .bottom-image2{
-    background-image: url("../img/elsa.gif");
+    background-image: url("../img/kanna-chan.gif");
 }
 
 .intro{
@@ -42,4 +42,5 @@
     margin: 0 auto;
     width: 50%;
     font-weight: lighter;
+    font-size: 80px;
 }
