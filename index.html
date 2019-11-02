@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Get to know me!</title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="fullPage very simple demo." />
+	<meta name="keywords"  content="fullpage,jquery,demo,simple" />
+	<meta name="Resource-type" content="Document" />
+
+	<link rel="stylesheet" type="text/css" href="fullpage-js/dist/fullpage.css" />
+	<link rel="stylesheet" type="text/css" href="fullpage-js/examples/examples.css" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap/css/bootstrap.css" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/base.css" />
+</head>
+<body>
+
+<div id="fullpage">
+	<div class="section active bg-image top-image" id="section0">
+		<!-- <h1>Hi! I'm Glenn Sabales</h1> -->
+		<div class="jumbotron intro">
+			<h1>Hi, I'm Glenn!</h1>
+			<p>Welcome to my simple web page! It's nice to know that you wanna know a little something about me.
+				Well then, let me introduce myself by clicking this button right here...</p>
+			<p><a href="#secondPage" class="btn btn-primary btn-lg" href="#" role="button">Click Me!</a></p>
+		</div>
+    </div>
+	<div class="section" id="section1">
+		<div class="slide active bg-image slide-image1"><h1>Further Details...</h1></div>
+	    <div class="slide bg-image slide-image2"><h1>Only text</h1></div>
+	    <div class="slide bg-image slide-image3"><h1>And text</h1></div>
+	    <div class="slide bg-image slide-image4"><h1>And more text</h1></div>
+	</div>
+	<div class="section bg-image bottom-image1" id="section2"><h1>No wraps, no extra markup</h1></div>
+	<div class="section bg-image bottom-image2" id="section3"><h1>Just the simplest demo ever</h1></div>
+</div>
+
+
+
+<script type="text/javascript" src="fullpage-js/dist/fullpage.js"></script>
+<script type="text/javascript" src="css/bootstrap/js/bootstrap.js"></script>
+<script type="text/javascript" src="css/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+	var myFullpage = new fullpage('#fullpage', {
+		sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+		anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+		// menu:'menu',
+		lazyLoad: true
+	});
+</script>
+</body>
+</html>

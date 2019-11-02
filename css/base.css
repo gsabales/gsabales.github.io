@@ -1,0 +1,45 @@
+.bg-image{
+    background-color: hsl(0, 0%, 80%); /* Used if the image is unavailable */
+    height: 500px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.top-image{
+    background-image: url("../img/stock1.jpeg");
+}
+
+.slide-image1{
+    background-image: url("../img/stock2.jpeg");
+}
+
+.slide-image2{
+    background-image: url("../img/stock3.jpeg");
+}
+
+.slide-image3{
+    background-image: url("../img/clouds.jpg");
+}
+
+.slide-image4{
+    background-image: url("../img/office1.jpg");
+}
+
+.bottom-image1{
+    background-image: url("../img/night.jpg");
+}
+
+.bottom-image2{
+    background-image: url("../img/elsa.gif");
+}
+
+.intro{
+    text-align: left;
+    background-color: transparent;
+}
+.intro > h1{
+    margin: 0 auto;
+    width: 50%;
+    font-weight: lighter;
+}
