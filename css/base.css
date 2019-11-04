@@ -38,9 +38,14 @@
     text-align: left;
     background-color: transparent;
 }
+
 .intro > h1{
     margin: 0 auto;
     width: 50%;
     font-weight: lighter;
     font-size: 80px;
+}
+
+.mypic{
+    border-radius: 50%;
 }
