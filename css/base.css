@@ -7,23 +7,19 @@
 }
 
 .top-image{
-    background-image: url("../img/stock1.jpeg");
+    background-image: url("../img/stock1.jpg");
 }
 
 .slide-image1{
-    background-image: url("../img/stock2.jpeg");
+    background-image: url("../img/stock2.jpg");
 }
 
 .slide-image2{
-    background-image: url("../img/stock3.jpeg");
+    background-image: url("../img/stock3.jpg");
 }
 
 .slide-image3{
-    background-image: url("../img/clouds.jpg");
-}
-
-.slide-image4{
-    background-image: url("../img/office1.jpg");
+    background-image: url("../img/stock1.jpg");
 }
 
 .bottom-image1{
