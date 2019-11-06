@@ -1,7 +1,7 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+	<!DOCTYPE html>
+	<html xmlns="http://www.w3.org/1999/xhtml">
 
-<head>
+	<head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Get to know me!</title>
 	<meta name="author" content="Alvaro Trigo Lopez" />
@@ -14,38 +14,78 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap/css/bootstrap.css" />
 	<link rel="stylesheet" type="text/css" href="css/bootstrap/css/bootstrap.min.css" />
 	<link rel="stylesheet" type="text/css" href="css/base.css" />
-</head>
-<body>
 
-<div id="fullpage">
+	<!--	Devfolio CSS Templates-->
+	<!--	<link rel="stylesheet" type="text/css" href="css/devfolio/style.css" />-->
+
+	<!-- Libraries CSS Files -->
+	<link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="lib/animate/animate.min.css" rel="stylesheet">
+	<link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+	<link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+	<link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+	</head>
+	<body>
+
+	<div id="fullpage">
 	<div class="section active bg-image top-image" id="section0">
-<!--		<img class="mypic" src="img/mypic.jpg">-->
+	<!--		<img class="mypic" src="img/mypic.jpg">-->
 		<div class="jumbotron intro">
 			<h1>Hi, I'm Glenn!</h1>
 			<p>Welcome to my page! It seems that you wanna know a little something about me.
 				Well then, let me introduce myself by clicking this button right here...</p>
 			<p><a href="#secondPage/1" class="btn btn-primary btn-lg" href="#" role="button">Click Me!</a></p>
 		</div>
-    </div>
-	<div class="section" id="section1">
-		<div class="slide bg-image slide-image1" id="page-top">
-
-
-
 		</div>
-	    <div class="slide active bg-image slide-image2"></div>
-	    <div class="slide bg-image slide-image3"></div>
-<!--	    <div class="slide bg-image slide-image2"></div>-->
+	<div class="section" id="section1">
+		<div class="slide bg-image slide-image1" id="page-top"></div>
+			<div class="slide active bg-image slide-image2">
+
+				<section id="about" class="about-mf sect-pt4">
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="box-shadow-full">
+									<div class="row">
+										<div class="col-md-6">
+											<div class="row">
+												<div class="col-sm-6 col-md-5">
+													<div class="about-img">
+														<img src="img/testimonial-2.jpg" class="img-fluid mypic" alt="">
+													</div>
+												</div>
+												<div class="col-sm-6 col-md-7">
+													<div class="about-info">
+														<p><span class="title-s">Name: </span> <span>Morgan Freeman</span></p>
+														<p><span class="title-s">Profile: </span> <span>full stack developer</span></p>
+														<p><span class="title-s">Email: </span> <span>contact@example.com</span></p>
+														<p><span class="title-s">Phone: </span> <span>(617) 557-0089</span></p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+
+			</div>
+			<div class="slide bg-image slide-image3"></div>
+	<!--	    <div class="slide bg-image slide-image2"></div>-->
 	</div>
 	<div class="section bg-image bottom-image1" id="section2">/div>
-<!--	<div class="section bg-image bottom-image2" id="section3"></div>-->
-</div>
+	<!--	<div class="section bg-image bottom-image2" id="section3"></div>-->
+	</div>
 
 
 
-<script type="text/javascript" src="fullpage-js/dist/fullpage.js"></script>
-<script type="text/javascript" src="css/bootstrap/js/bootstrap.js"></script>
-<script type="text/javascript" src="css/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="fullpage-js/dist/fullpage.js"></script>
+	<script type="text/javascript" src="css/bootstrap/js/bootstrap.js"></script>
+	<script type="text/javascript" src="css/bootstrap/js/bootstrap.min.js"></script>
 
 	<!-- Bootstrap core JavaScript -->
 	<script src="vendor/jquery/jquery.min.js"></script>
@@ -54,10 +94,23 @@
 	<!-- Plugin JavaScript -->
 	<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-	<!-- Custom scripts for this template -->
-	<script src="js/resume.min.js"></script>
+	<!-- JavaScript Libraries -->
+	<script src="lib/jquery/jquery.min.js"></script>
+	<script src="lib/jquery/jquery-migrate.min.js"></script>
+	<script src="lib/popper/popper.min.js"></script>
+	<script src="lib/easing/easing.min.js"></script>
+	<script src="lib/counterup/jquery.waypoints.min.js"></script>
+	<script src="lib/counterup/jquery.counterup.js"></script>
+	<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+	<script src="lib/lightbox/js/lightbox.min.js"></script>
+	<script src="lib/typed/typed.min.js"></script>
+	<!-- Contact Form JavaScript File -->
+	<script src="contactform/contactform.js"></script>
 
+	<!-- Template Main Javascript File -->
+	<script src="js/main.js"></script>
 
+	<!--	Fullpage Javascript Configuration-->
 	<script type="text/javascript">
 	var myFullpage = new fullpage('#fullpage', {
 		sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
@@ -65,6 +118,6 @@
 		// menu:'menu',
 		lazyLoad: true
 	});
-</script>
-</body>
-</html>
+	</script>
+	</body>
+	</html>
