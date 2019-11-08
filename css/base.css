@@ -49,6 +49,8 @@
 
 .mypic{
     border-radius: 0.5rem;
+    height: 150px;
+    width: 150px;
 }
 
 /*======================================
@@ -76,11 +78,11 @@
     background-color: #cde1f8;
     margin: .5rem 0 1.2rem 0;
     border-radius: 0;
-    height: .7rem;
+    height: 1.2rem;
 }
 
 .skill-mf .progress .progress-bar {
-    height: .7rem;
+    height: 1.2rem;
     background-color: #0078ff;
 }
 
@@ -107,4 +109,69 @@
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
 }
 
+/*--/ Title s /--*/
 
+.title-s {
+    font-weight: 600;
+    color: #1e1e1e;
+    text-align: left;
+    font-size: 20px;
+}
+
+.about-info {
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+.skill-mf {
+    text-align: left;
+    /*font-size: 0.9rem;*/
+}
+
+
+@media (min-width: 768px) {
+    .box-shadow-full {
+        padding: 3rem;
+    }
+
+    .navbar-b.navbar-trans .nav-item,
+    .navbar-b.navbar-reduce .nav-item {
+        padding-left: 10px;
+    }
+
+    .navbar-b.navbar-trans .nav-link:before,
+    .navbar-b.navbar-reduce .nav-link:before {
+        margin-left: 18px;
+    }
+
+    .intro .intro-title {
+        font-size: 4.5rem;
+    }
+
+    .intro .intro-subtitle {
+        font-size: 2.5rem;
+    }
+
+    .intro-single .intro-title {
+        font-size: 3.5rem;
+    }
+
+    .testimonial-box .description {
+        padding: 0 5rem;
+    }
+
+    .post-box,
+    .form-comments,
+    .box-comments,
+    .widget-sidebar {
+        padding: 3rem;
+    }
+
+    .blog-wrapper .article-title {
+        font-size: 1.9rem;
+    }
+
+    .box-comments .list-comments .comment-author {
+        font-size: 1.5rem;
+    }
+}
