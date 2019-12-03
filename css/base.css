@@ -306,6 +306,55 @@ h6 {
 //--//-->   FADE-INS
 ======================================*/
 
+/*.section0 > .fp-tableCell h1 {*/
+/*    opacity: 0;*/
+/*    -webkit-transition: opacity 1s ease-in-out;*/
+/*    transition: opacity 1s ease-in-out;*/
+
+/*    animation-delay: 0.7s;*/
+/*    -webkit-animation-delay: 0.7s;*/
+/*}*/
+
+.section0.active > .fp-tableCell h1 {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+
+    animation-delay: 0.7s;
+    -webkit-animation-delay: 0.7s;
+}
+
+.section0.active > .fp-tableCell p {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+
+    animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+}
+
+.section1.active .slide-image2.active > .fp-tableCell div {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+
+    animation-delay: 0.7s;
+    -webkit-animation-delay: 0.7s;
+}
+
+
 .animated {
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
