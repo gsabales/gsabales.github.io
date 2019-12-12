@@ -249,11 +249,11 @@
 											<div class="col-md-4 title-box-2">
 												<h5 class="title-left">Contact Me</h5>
 											</div>
-											<form class="contactForm">
+											<form class="contactForm" id="contact-form">
 												<div class="row">
 													<div class="col-md-12" style="margin-bottom: 1rem">
 														<div class="form-group">
-															<input type="text" name="name" class="form-control" id="name" placeholder="Your Name"/>
+															<input type="text" name="name" class="form-control" id="username" placeholder="Your Name"/>
 															<div class="validation"></div>
 														</div>
 													</div>
@@ -271,12 +271,12 @@
 													</div>
 													<div class="col-md-12" style="margin-bottom: 1rem">
 														<div class="form-group">
-															<textarea class="form-control" name="message" rows="6" placeholder="Message"></textarea>
+															<textarea class="form-control" name="message" rows="6" placeholder="Message" id="message"></textarea>
 															<div class="validation"></div>
 														</div>
 													</div>
 													<div class="col-md-5">
-														<button type="submit" class="button button-a button-big button-rounded">Send Message</button>
+														<button class="button button-a button-big button-rounded" onclick="sendEmail()">Send Message</button>
 													</div>
 												</div>
 											</form>
@@ -321,6 +321,7 @@
 		<script type="text/javascript" src="fullpage-js/dist/fullpage.js"></script>
 		<script type="text/javascript" src="css/bootstrap/js/bootstrap.js"></script>
 		<script type="text/javascript" src="css/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/smtp.js"></script>
 
 		<!--	Fullpage Javascript Configuration-->
 		<script type="text/javascript">
@@ -331,6 +332,18 @@
 			menu:'menu',
 			lazyLoad: true
 		});
+		</script>
+
+		<script type="text/javascript">
+			function sendEmail(){
+				this.Email.send({
+					To: "glenn.sabales@novare.com.hk",
+					From: this.document.getElementById("email").value,
+					Subject: this.document.getElementById("subject").value,
+					Body: this.document.getElementById("message").value,
+					SecureToken: "8b03d16c-57cd-4925-9102-7f5367cc418c"
+				}).then(message => alert(message));
+			}
 		</script>
 	</body>
 </html>
