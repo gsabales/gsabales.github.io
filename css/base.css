@@ -373,7 +373,7 @@ h6 {
     -webkit-animation-delay: 0.5s;
 }
 
-.section1.active .slide-image3.active > .fp-tableCell  section > div > div.first-row {
+.section1.active .slide-image3.active > .fp-tableCell  section > div > div.first-row > div {
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
     -webkit-animation-fill-mode: both;
@@ -386,7 +386,7 @@ h6 {
     -webkit-animation-delay: 0.75s;
 }
 
-.section1.active .slide-image3.active > .fp-tableCell  section > div > div.second-row {
+.section1.active .slide-image3.active > .fp-tableCell  section > div > div.second-row > div {
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
     -webkit-animation-fill-mode: both;
@@ -395,10 +395,29 @@ h6 {
     -webkit-animation-name: appearFromRight;
     animation-name: appearFromRight;
 
+    animation-delay: 1.25s;
+    -webkit-animation-delay: 1.25s;
+}
+
+.section1.active .slide-image3.active > .fp-tableCell  section > div > div.first-row > div + div {
     animation-delay: 1s;
     -webkit-animation-delay: 1s;
 }
 
+.section1.active .slide-image3.active > .fp-tableCell  section > div > div.second-row > div + div {
+    animation-delay: 1.5s;
+    -webkit-animation-delay: 1.5s;
+}
+
+.section1.active .slide-image3.active > .fp-tableCell  section > div > div.first-row > div + div + div{
+    animation-delay: 1.25s;
+    -webkit-animation-delay: 1.25s;
+}
+
+.section1.active .slide-image3.active > .fp-tableCell  section > div > div.second-row > div + div + div{
+    animation-delay: 1.75s;
+    -webkit-animation-delay: 1.75s;
+}
 
 .animated {
     -webkit-animation-duration: 1s;
