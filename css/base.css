@@ -75,6 +75,8 @@ h6 {
     width: 150px;
 }
 
+
+
 /*======================================
 //--//-->   ABOUT
 ======================================*/
@@ -206,6 +208,39 @@ h6 {
     font-size: 1.7rem;
 }
 
+.exp-img {
+    height: 90%;
+    width: 90%;
+    margin: 25% 0;
+}
+
+.subpar {
+    padding-bottom: 2rem;
+    line-height: 24px;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: #888888;
+}
+
+.featured-box-col1 i{
+    display:block;
+    line-height:38px;
+    font-family: 'FontAwesome';
+    font-size:38px;
+    color:#777777;
+    font-style:normal;
+}
+
+.subpar h4{
+    margin: 0 0 0.5rem 1rem;
+    font-size: 1.6rem;
+    color: #0078ff
+}
+
+.subpar p{
+    margin: 0 0 2rem 1rem;
+}
 
 @media (min-width: 768px) {
     .box-shadow-full {
