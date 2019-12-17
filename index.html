@@ -36,9 +36,11 @@
 <!--					<h1 class = "animated fadeInDown delay-07s">Hi, I'm Glenn!</h1>-->
 					<h1>Hi, I'm Glenn!</h1>
 					<div>
-						<p>I'm still a newbie web developer, so I created this personal online portfolio to practice client-side programming.
-							Well then, if you could please test the button functionality below, that would be great!
-						</p>
+<!--						<p id="quote">I'm still a newbie web developer, so I created this personal online portfolio to practice client-side programming.-->
+<!--							Well then, if you could please test the button functionality below, that would be great!-->
+<!--						</p>-->
+						<p id="quote"></p>
+						<p id="author"></p>
 						<p><a href="#secondPage/1" class="btn btn-primary btn-lg" href="#" role="button">Generic Button</a></p>
 					</div>
 				</div>
@@ -196,10 +198,8 @@
 														</h5>
 													</div>
 													<p class="lead">
-														Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Curabitur arcu erat, accumsan id
-														imperdiet et, porttitor
-														at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Nulla
-														porttitor accumsan tincidunt.
+														I'm still a newbie developer, so I created this online portfolio to practice client side programming.
+
 													</p>
 													<p class="lead">
 														Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus suscipit tortor eget felis
@@ -442,6 +442,23 @@
 					SecureToken: "8b03d16c-57cd-4925-9102-7f5367cc418c"
 				}).then(message => alert(message));
 			}
+		</script>
+
+		<script type="text/javascript">
+			let random;
+			fetch("https://type.fit/api/quotes")
+					.then(function(response) {
+						return response.json();
+					})
+					.then(function(data) {
+						random = Math.round(Math.random() * 1643);
+						this.document.getElementById('quote').innerHTML = '\"' + data[random].text + '\"';
+						if(data[random].author !== null)
+							this.document.getElementById('author').innerHTML = '- ' + data[random].author;
+						else
+							this.document.getElementById('author').innerHTML = '- Anonymous';
+						console.log(data);
+					});
 		</script>
 	</body>
 </html>
