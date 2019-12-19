@@ -27,7 +27,8 @@
 	<link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 	<link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
-	</head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
 	<body>
 
 		<div id="fullpage">
@@ -48,7 +49,7 @@
 			<div class="section section1">
 				<div class="slide bg-image slide-image1" id="page-top">
 					<section id="experiences" class="sect-pt4">
-						<div class="container">
+						<div class="container box-skills">
 							<div class="row">
 								<div class="col-sm-12">
 									<div class="box-shadow-full">
@@ -144,7 +145,7 @@
 
 				<div class="slide active bg-image slide-image2">
 					<section id="about" class="about-mf sect-pt4">
-						<div class="container">
+						<div class="container box-about-me">
 							<div class="row">
 								<div class="col-sm-12">
 									<div class="box-shadow-full">
@@ -415,11 +416,12 @@
 		</div>
 
 
-		<script type="text/javascript" src="lib/jquery/jquery.min.js"></script>
+<!--		<script type="text/javascript" src="lib/jquery/jquery.min.js"></script>-->
 		<script type="text/javascript" src="fullpage-js/dist/fullpage.js"></script>
 		<script type="text/javascript" src="css/bootstrap/js/bootstrap.js"></script>
 		<script type="text/javascript" src="css/bootstrap/js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="js/smtp.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
 
 		<!--	Fullpage Javascript Configuration-->
 		<script type="text/javascript">
@@ -460,5 +462,15 @@
 						// console.log(data);
 					});
 		</script>
+    <script type="text/javascript">
+        $(".box-about-me").tilt({
+            maxTilt: 3,
+            scale: 1.1
+        });
+
+        $(".box-skills").tilt({
+            maxTilt: 3,
+        });
+    </script>
 	</body>
 </html>
