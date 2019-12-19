@@ -99,16 +99,82 @@ h6 {
     font-size: 1.7rem;
 }
 
-.skill-mf .progress {
+/*.skill-mf .progress {*/
+/*    background-color: #cde1f8;*/
+/*    margin: 1rem 0 1.5rem 0;*/
+/*    border-radius: 0;*/
+/*    height: 1.2rem;*/
+/*}*/
+
+/*.skill-mf .progress .progress-bar {*/
+/*    height: 1.2rem;*/
+/*    background-color: #0078ff;*/
+/*    animation: progressBar 3s ease-in-out;*/
+/*    animation-fill-mode: both;*/
+/*    animation-delay: 1s;*/
+/*}*/
+
+.progress {
     background-color: #cde1f8;
     margin: 1rem 0 1.5rem 0;
     border-radius: 0;
     height: 1.2rem;
+    position: relative;
+    overflow: hidden;
 }
 
-.skill-mf .progress .progress-bar {
-    height: 1.2rem;
+.progress > div{
+    display: block;
+    height: 100%;
+}
+
+
+.section1.active .slide-image2.active > .fp-tableCell section > div > div > div > div > div > div.about-us-col1 > div.skill-mf > div.progress > span.progress-bar-1 {
+    animation: progressBar1 0.75s ease-out;
     background-color: #0078ff;
+    animation-fill-mode: both;
+    animation-delay: 1.25s;
+}
+
+.section1.active .slide-image2.active > .fp-tableCell section > div > div > div > div > div > div.about-us-col1 > div.skill-mf > div.progress > span.progress-bar-2 {
+    animation: progressBar2 0.75s ease-out;
+    background-color: #0078ff;
+    animation-fill-mode: both;
+    animation-delay: 1.25s;
+}
+
+.section1.active .slide-image2.active > .fp-tableCell section > div > div > div > div > div > div.about-us-col1 > div.skill-mf > div.progress > span.progress-bar-3 {
+    animation: progressBar3 0.75s ease-out;
+    background-color: #0078ff;
+    animation-fill-mode: both;
+    animation-delay: 1.25s;
+}
+
+.section1.active .slide-image2.active > .fp-tableCell section > div > div > div > div > div > div.about-us-col1 > div.skill-mf > div.progress > span.progress-bar-4 {
+    animation: progressBar4 0.75s ease-out;
+    background-color: #0078ff;
+    animation-fill-mode: both;
+    animation-delay: 1.25s;
+}
+
+@keyframes progressBar1 {
+    0% { width: 0; }
+    100% { width: 85%; }
+}
+
+@keyframes progressBar2 {
+    0% { width: 0; }
+    100% { width: 75%; }
+}
+
+@keyframes progressBar3 {
+    0% { width: 0; }
+    100% { width: 65%; }
+}
+
+@keyframes progressBar4 {
+    0% { width: 0; }
+    100% { width: 85%; }
 }
 
 /*--/ Sections /--*/
@@ -387,7 +453,7 @@ h6 {
     -webkit-animation-delay: 1s;
 }
 
-.section1.active .slide-image2.active > .fp-tableCell div {
+.section1.active .slide-image2.active > .fp-tableCell section > div > div > div > div {
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
     -webkit-animation-fill-mode: both;
@@ -398,6 +464,32 @@ h6 {
 
     animation-delay: 0.5s;
     -webkit-animation-delay: 0.5s;
+}
+
+.section1.active .slide-image2.active > .fp-tableCell section > div > div > div > div > div > div.about-us-col1 {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+
+    animation-delay: 0.75s;
+    -webkit-animation-delay: 0.75s;
+}
+
+.section1.active .slide-image2.active > .fp-tableCell section > div > div > div > div > div > div.about-us-col2 {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+
+    -webkit-animation-name: fadeInRight;
+    animation-name: fadeInRight;
+
+    animation-delay: 0.75s;
+    -webkit-animation-delay: 0.75s;
 }
 
 .section1.active .slide-image3.active > .fp-tableCell section > div > div.title-row {
@@ -426,6 +518,16 @@ h6 {
     -webkit-animation-delay: 0.75s;
 }
 
+.section1.active .slide-image3.active > .fp-tableCell  section > div > div.first-row > div + div {
+    animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+}
+
+.section1.active .slide-image3.active > .fp-tableCell  section > div > div.first-row > div + div + div{
+    animation-delay: 1.25s;
+    -webkit-animation-delay: 1.25s;
+}
+
 .section1.active .slide-image3.active > .fp-tableCell  section > div > div.second-row > div {
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
@@ -439,19 +541,9 @@ h6 {
     -webkit-animation-delay: 1.25s;
 }
 
-.section1.active .slide-image3.active > .fp-tableCell  section > div > div.first-row > div + div {
-    animation-delay: 1s;
-    -webkit-animation-delay: 1s;
-}
-
 .section1.active .slide-image3.active > .fp-tableCell  section > div > div.second-row > div + div {
     animation-delay: 1.5s;
     -webkit-animation-delay: 1.5s;
-}
-
-.section1.active .slide-image3.active > .fp-tableCell  section > div > div.first-row > div + div + div{
-    animation-delay: 1.25s;
-    -webkit-animation-delay: 1.25s;
 }
 
 .section1.active .slide-image3.active > .fp-tableCell  section > div > div.second-row > div + div + div{
@@ -497,6 +589,22 @@ h6 {
         -webkit-transform: translateX(-20px);
         -ms-transform: translateX(-20px);
         transform: translateX(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(20px);
+        -ms-transform: translateX(20px);
+        transform: translateX(20px);
     }
 
     100% {
