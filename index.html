@@ -12,17 +12,10 @@
 
 	<link href="img/g-logo.jpg" rel="icon">
 	<link rel="stylesheet" type="text/css" href="fullpage-js/dist/fullpage.css" />
-<!--	<link rel="stylesheet" type="text/css" href="fullpage-js/examples/examples.css" />-->
 	<link rel="stylesheet" type="text/css" href="css/bootstrap/css/bootstrap.css" />
 	<link rel="stylesheet" type="text/css" href="css/bootstrap/css/bootstrap.min.css" />
 	<link rel="stylesheet" type="text/css" href="css/base.css" />
-
-	<!--	Devfolio CSS Templates-->
-	<!--	<link rel="stylesheet" type="text/css" href="css/devfolio/style.css" />-->
-
-	<!-- Libraries CSS Files -->
 	<link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-<!--	<link href="lib/animate/animate.min.css" rel="stylesheet">-->
 	<link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
 	<link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 	<link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
@@ -34,12 +27,8 @@
 		<div id="fullpage">
 			<div class="section section0 active bg-image top-image">
 				<div class="jumbotron intro">
-<!--					<h1 class = "animated fadeInDown delay-07s">Hi, I'm Glenn!</h1>-->
 					<h1>Hi, I'm Glenn!</h1>
 					<div>
-<!--						<p id="quote">I'm still a newbie web developer, so I created this personal online portfolio to practice client-side programming.-->
-<!--							Well then, if you could please test the button functionality below, that would be great!-->
-<!--						</p>-->
 						<p id="quote"></p>
 						<p id="author"></p>
 						<p><a href="#secondPage/1" class="btn btn-primary btn-lg" href="#" role="button">Generic Button</a></p>
@@ -416,61 +405,11 @@
 		</div>
 
 
-<!--		<script type="text/javascript" src="lib/jquery/jquery.min.js"></script>-->
 		<script type="text/javascript" src="fullpage-js/dist/fullpage.js"></script>
 		<script type="text/javascript" src="css/bootstrap/js/bootstrap.js"></script>
 		<script type="text/javascript" src="css/bootstrap/js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="js/smtp.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
-
-		<!--	Fullpage Javascript Configuration-->
-		<script type="text/javascript">
-		var myFullpage = new fullpage('#fullpage', {
-			licenseKey: ' OPEN-SOURCE-GPLV3-LICENSE',
-			sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
-			anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
-			menu:'menu',
-			lazyLoad: true
-		});
-		</script>
-
-		<script type="text/javascript">
-			function sendEmail(){
-				this.Email.send({
-					To: "glenn.sabales@novare.com.hk",
-					From: this.document.getElementById("email").value,
-					Subject: this.document.getElementById("subject").value,
-					Body: this.document.getElementById("message").value,
-					SecureToken: "8b03d16c-57cd-4925-9102-7f5367cc418c"
-				}).then(message => alert(message));
-			}
-		</script>
-
-		<script type="text/javascript">
-			let random;
-			fetch("https://type.fit/api/quotes")
-					.then(function(response) {
-						return response.json();
-					})
-					.then(function(data) {
-						random = Math.round(Math.random() * 1643);
-						this.document.getElementById('quote').innerHTML = '\"' + data[random].text + '\"';
-						if(data[random].author !== null)
-							this.document.getElementById('author').innerHTML = '- ' + data[random].author;
-						else
-							this.document.getElementById('author').innerHTML = '- Anonymous';
-						// console.log(data);
-					});
-		</script>
-    <script type="text/javascript">
-        $(".box-about-me").tilt({
-            maxTilt: 3,
-            scale: 1.1
-        });
-
-        $(".box-skills").tilt({
-            maxTilt: 3,
-        });
-    </script>
+		<script type="text/javascript" src="js/base.js"></script>
 	</body>
 </html>

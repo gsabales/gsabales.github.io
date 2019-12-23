@@ -99,21 +99,6 @@ h6 {
     font-size: 1.7rem;
 }
 
-/*.skill-mf .progress {*/
-/*    background-color: #cde1f8;*/
-/*    margin: 1rem 0 1.5rem 0;*/
-/*    border-radius: 0;*/
-/*    height: 1.2rem;*/
-/*}*/
-
-/*.skill-mf .progress .progress-bar {*/
-/*    height: 1.2rem;*/
-/*    background-color: #0078ff;*/
-/*    animation: progressBar 3s ease-in-out;*/
-/*    animation-fill-mode: both;*/
-/*    animation-delay: 1s;*/
-/*}*/
-
 .progress {
     background-color: #cde1f8;
     margin: 1rem 0 1.5rem 0;
@@ -130,31 +115,31 @@ h6 {
 
 
 .section1.active .slide-image2.active > .fp-tableCell section > div > div > div > div > div > div.about-us-col1 > div.skill-mf > div.progress > span.progress-bar-1 {
-    animation: progressBar1 0.75s ease-out;
+    animation: progressBar1 0.75s ease-in-out;
     background-color: #0078ff;
     animation-fill-mode: both;
-    animation-delay: 1.25s;
+    animation-delay: 1s;
 }
 
 .section1.active .slide-image2.active > .fp-tableCell section > div > div > div > div > div > div.about-us-col1 > div.skill-mf > div.progress > span.progress-bar-2 {
-    animation: progressBar2 0.75s ease-out;
+    animation: progressBar2 0.75s ease-in-out;
     background-color: #0078ff;
     animation-fill-mode: both;
-    animation-delay: 1.25s;
+    animation-delay: 1s;
 }
 
 .section1.active .slide-image2.active > .fp-tableCell section > div > div > div > div > div > div.about-us-col1 > div.skill-mf > div.progress > span.progress-bar-3 {
-    animation: progressBar3 0.75s ease-out;
+    animation: progressBar3 0.75s ease-in-out;
     background-color: #0078ff;
     animation-fill-mode: both;
-    animation-delay: 1.25s;
+    animation-delay: 1s;
 }
 
 .section1.active .slide-image2.active > .fp-tableCell section > div > div > div > div > div > div.about-us-col1 > div.skill-mf > div.progress > span.progress-bar-4 {
-    animation: progressBar4 0.75s ease-out;
+    animation: progressBar4 0.75s ease-in-out;
     background-color: #0078ff;
     animation-fill-mode: both;
-    animation-delay: 1.25s;
+    animation-delay: 1s;
 }
 
 @keyframes progressBar1 {
@@ -475,8 +460,8 @@ h6 {
     -webkit-animation-name: fadeInLeft;
     animation-name: fadeInLeft;
 
-    animation-delay: 0.75s;
-    -webkit-animation-delay: 0.75s;
+    animation-delay: 1s;
+    -webkit-animation-delay: 1s;
 }
 
 .section1.active .slide-image2.active > .fp-tableCell section > div > div > div > div > div > div.about-us-col2 {
