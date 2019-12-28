@@ -3,7 +3,7 @@
 ======================================*/
 
 body {
-    background-color: #f5f5f5;
+    background-color: #ffffff;
     color: #4e4e4e;
 }
 
@@ -21,7 +21,8 @@ h6 {
 ======================================*/
 
 .bg-image{
-    background-color: hsl(0, 0%, 80%); /* Used if the image is unavailable */
+    /*background-color: hsl(0, 0%, 80%); !* Used if the image is unavailable *!*/
+    background-color: #ffffff;
     height: 500px; /* You must set a specified height */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
@@ -32,20 +33,12 @@ h6 {
     background-image: url("../img/stock1.jpg");
 }
 
-.slide-image1{
-    background-image: url("../img/work-1.jpg");
-}
-
-.slide-image2{
-    background-image: url("../img/work-2.jpg");
-}
-
-.slide-image3{
-    background-image: url("../img/stock3.jpg");
+.slide-image1, .slide-image2,  .slide-image3{
+    background-image: url("../img/stock2.jpg");
 }
 
 .bottom-image1{
-    background-image: url("../img/work-4.jpg");
+    background-image: url("../img/dark.png");
 }
 
 .bottom-image2{
@@ -60,6 +53,7 @@ h6 {
 .intro p {
     width: 50%;
     margin: 0 auto;
+    font-size: larger;
 }
 
 .intro > h1{
@@ -82,12 +76,11 @@ h6 {
 ======================================*/
 
 .about-mf .box-shadow-full {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding: 2.5rem;
 }
 
 .about-mf .about-img {
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
 }
 
 .about-mf .about-img img {
@@ -96,14 +89,14 @@ h6 {
 
 .skill-mf span {
     color: #4e4e4e;
-    font-size: 1.7rem;
+    font-size: 1rem;
 }
 
 .progress {
     background-color: #cde1f8;
-    margin: 1rem 0 1.5rem 0;
+    margin: 0.75rem 0 0.75rem 0;
     border-radius: 0;
-    height: 1.2rem;
+    height: 0.75rem;
     position: relative;
     overflow: hidden;
 }
@@ -187,19 +180,20 @@ h6 {
 
 /*--/ Title /--*/
 
-.title-box {
-    margin-bottom: 4rem;
-}
+/*.title-box {*/
+/*    margin-bottom: 4rem;*/
+/*}*/
 
 .title-a {
-    font-size: 5rem;
+    font-size: 2.5rem;
     font-weight: bold;
     text-transform: uppercase;
 }
 
 .subtitle-a {
     color: #4e4e4e;
-    font-size: 2rem;
+    font-size: 1rem;
+    margin-bottom: 10px;
 }
 
 .line-mf {
@@ -210,12 +204,12 @@ h6 {
 }
 
 .title-box-2 {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     padding-left: 0px;
 }
 
 .title-left {
-    font-size: 3rem;
+    font-size: 1.75rem;
     position: relative;
 }
 
@@ -236,18 +230,18 @@ h6 {
     color: #1e1e1e;
     text-align: left;
     /*font-size: 20px;*/
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 
 
 .about-info {
     text-align: left;
-    font-size: 1.7rem;
+    font-size: 1rem;
 }
 
 .about-info p{
-    margin: 1.5rem;
+    margin: 1rem;
 }
 
 .about-me {
@@ -256,17 +250,16 @@ h6 {
 
 .skill-mf {
     text-align: left;
-    font-size: 1.7rem;
+    font-size: 1rem;
 }
 
 .exp-img {
-    height: 90%;
     width: 90%;
     margin: 50% 0;
 }
 
 .subpar {
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
     line-height: 24px;
     margin: 0;
     font-family: 'Open Sans', sans-serif;
@@ -285,12 +278,12 @@ h6 {
 
 .subpar h4{
     margin: 0 0 0.5rem 1rem;
-    font-size: 1.6rem;
+    font-size: 1rem;
     color: #0078ff
 }
 
 .subpar p{
-    margin: 0 0 2rem 1rem;
+    margin: 0 0 0.5rem 1rem;
 }
 
 @media (min-width: 768px) {
@@ -346,31 +339,32 @@ h6 {
 
 .service-box {
     background-color: #fff;
-    padding: 4rem 2rem;
+    padding: 2rem 1rem;
     border-radius: 1rem;
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
     transition: transform .3s;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
 }
 
 .service-box:hover .ico-circle {
     transition: all 500ms ease;
     color: #fff;
     background-color: #0078ff;
-    box-shadow: 0 0 0 10px #cde1f8;
+    box-shadow: 0 0 0 8px #cde1f8;
 }
 
 .service-box .service-ico {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     color: #1e1e1e;
 }
 
 .service-box .ico-circle {
     transition: all 500ms ease;
-    font-size: 7rem;
+    font-size: 3.25rem;
 }
 
 .service-box .s-title {
-    font-size: 2rem;
+    font-size: 1rem;
     text-transform: uppercase;
     text-align: center;
     padding: .4rem 0;
@@ -378,7 +372,7 @@ h6 {
 
 .service-box .s-description {
     color: #4e4e4e;
-    font-size: 1.6rem;
+    font-size: 1rem;
 }
 
 .service-box:hover {
@@ -388,14 +382,14 @@ h6 {
 /*------/ Ico Circle /------*/
 
 .ico-circle {
-    height: 100px;
-    width: 100px;
+    height: 75px;
+    width: 75px;
     font-size: 2rem;
     border-radius: 50%;
     line-height: 1.55;
     margin: 0 auto;
     text-align: center;
-    box-shadow: 0 0 0 10px #0078ff;
+    box-shadow: 0 0 0 8px #0078ff;
     display: block;
 }
 
@@ -764,7 +758,7 @@ footer .credits a {
     padding-left: 0;
     margin-bottom: 0;
     line-height: 2;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 .contact-list span {
@@ -775,7 +769,7 @@ footer .credits a {
 /*------/ Socials /------*/
 
 .socials {
-    padding: 1.5rem 0;
+    padding: 1rem 0;
 }
 
 .socials ul li {
@@ -785,7 +779,7 @@ footer .credits a {
 .socials .ico-circle {
     height: 40px;
     width: 40px;
-    font-size: 3rem;
+    font-size: 2rem;
     border-radius: 50%;
     line-height: 1.4;
     margin: 0 15px 0 0;
@@ -875,8 +869,9 @@ footer .credits a {
 }
 
 .button-big {
-    padding: 1.5rem 3rem;
-    font-size: 1.8rem;
+    padding: 1rem 1.5rem;
+    font-size: 1.2rem;
+    margin: 20px 0;
 }
 
 .button-rounded {
@@ -915,7 +910,7 @@ footer .credits a {
 
 @media (min-width: 768px) {
     .box-shadow-full {
-        padding: 4rem;
+        padding: 2.5rem 2.5rem 1rem 2.5rem;
     }
 
     .navbar-b.navbar-trans .nav-item,
