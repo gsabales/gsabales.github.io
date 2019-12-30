@@ -46,17 +46,9 @@ h6 {
     background-color: transparent;
 }
 
-.intro p {
+.intro p, h1 {
     width: 50%;
     margin: 0 auto;
-    font-size: larger;
-}
-
-.intro > h1{
-    margin: 0 auto;
-    width: 50%;
-    font-weight: lighter;
-    font-size: 80px;
 }
 
 .mypic{
@@ -65,7 +57,65 @@ h6 {
     width: 150px;
 }
 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+        .intro p {
+            font-size: large;
+        }
 
+        .intro h1{
+            font-weight: lighter;
+            font-size: 60px;
+        }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .intro p {
+        font-size: large;
+    }
+
+    .intro h1{
+        font-weight: lighter;
+        font-size: 65px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+        .intro p {
+            font-size: large;
+        }
+
+        .intro h1{
+            font-weight: lighter;
+            font-size: 70px;
+        }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+        .intro p {
+            font-size: larger;
+        }
+
+        .intro h1{
+            font-weight: lighter;
+            font-size: 80px;
+        }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+        .intro p {
+            font-size: larger;
+        }
+
+        .intro h1{
+            font-weight: lighter;
+            font-size: 80px;
+        }
+}
 
 /*======================================
 //--//-->   ABOUT
@@ -176,10 +226,6 @@ h6 {
 
 /*--/ Title /--*/
 
-/*.title-box {*/
-/*    margin-bottom: 4rem;*/
-/*}*/
-
 .title-a {
     font-size: 2.5rem;
     font-weight: bold;
@@ -280,53 +326,6 @@ h6 {
 
 .subpar p{
     margin: 0 0 0.5rem 1rem;
-}
-
-@media (min-width: 768px) {
-    .box-shadow-full {
-        padding: 5rem;
-    }
-
-    .navbar-b.navbar-trans .nav-item,
-    .navbar-b.navbar-reduce .nav-item {
-        padding-left: 10px;
-    }
-
-    .navbar-b.navbar-trans .nav-link:before,
-    .navbar-b.navbar-reduce .nav-link:before {
-        margin-left: 18px;
-    }
-
-    .intro .intro-title {
-        font-size: 4.5rem;
-    }
-
-    .intro .intro-subtitle {
-        font-size: 2.5rem;
-    }
-
-    .intro-single .intro-title {
-        font-size: 3.5rem;
-    }
-
-    .testimonial-box .description {
-        padding: 0 5rem;
-    }
-
-    .post-box,
-    .form-comments,
-    .box-comments,
-    .widget-sidebar {
-        padding: 3rem;
-    }
-
-    .blog-wrapper .article-title {
-        font-size: 1.9rem;
-    }
-
-    .box-comments .list-comments .comment-author {
-        font-size: 1.5rem;
-    }
 }
 
 /*======================================
@@ -882,95 +881,6 @@ footer .credits a {
     border-radius: .3rem;
 }
 
-@media (min-width: 577px) {
-    .counter-box {
-        margin-bottom: 1.8rem;
-    }
-}
 
-@media (min-width: 767px) {
-    .about-mf .box-pl2 {
-        margin-top: 3rem;
-        padding-left: 0rem;
-    }
 
-    .card-blog {
-        margin-bottom: 3rem;
-    }
 
-    .contact-mf .box-pl2 {
-        margin-top: 3rem;
-        padding-left: 0rem;
-    }
-}
-
-@media (min-width: 768px) {
-    .box-shadow-full {
-        padding: 2.5rem 2.5rem 1rem 2.5rem;
-    }
-
-    .navbar-b.navbar-trans .nav-item,
-    .navbar-b.navbar-reduce .nav-item {
-        padding-left: 10px;
-    }
-
-    .navbar-b.navbar-trans .nav-link:before,
-    .navbar-b.navbar-reduce .nav-link:before {
-        margin-left: 18px;
-    }
-
-    .intro .intro-title {
-        font-size: 4.5rem;
-    }
-
-    .intro .intro-subtitle {
-        font-size: 2.5rem;
-    }
-
-    .intro-single .intro-title {
-        font-size: 3.5rem;
-    }
-
-    .testimonial-box .description {
-        padding: 0 5rem;
-    }
-
-    .post-box,
-    .form-comments,
-    .box-comments,
-    .widget-sidebar {
-        padding: 3rem;
-    }
-
-    .blog-wrapper .article-title {
-        font-size: 1.9rem;
-    }
-
-    .box-comments .list-comments .comment-author {
-        font-size: 1.5rem;
-    }
-}
-
-@media (min-width: 992px) {
-    .testimonial-box .description {
-        padding: 0 8rem;
-    }
-}
-
-@media (min-width: 1200px) {
-    .testimonial-box .description {
-        padding: 0 13rem;
-    }
-}
-
-@media (max-width: 1024px) {
-    .bg-image {
-        background-attachment: scroll;
-    }
-}
-
-@media (max-width: 768px) {
-    .back-to-top {
-        bottom: 15px;
-    }
-}
