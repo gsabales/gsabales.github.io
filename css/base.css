@@ -59,25 +59,30 @@ h6 {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-        .intro p {
-            font-size: large;
-        }
+    .intro p {
+        font-size: medium;
+    }
 
-        .intro h1{
-            font-weight: lighter;
-            font-size: 60px;
-        }
+    .intro h1 {
+        font-weight: lighter;
+        font-size: 40px;
+    }
+
+    .intro p, h1 {
+        width: auto;
+        margin: 0 5% 0 12%;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
     .intro p {
-        font-size: large;
+        font-size: medium;
     }
 
     .intro h1{
         font-weight: lighter;
-        font-size: 65px;
+        font-size: 60px;
     }
 }
 
@@ -129,10 +134,6 @@ h6 {
     margin-bottom: 2rem;
 }
 
-.about-mf .about-img img {
-    margin-left: 10px;
-}
-
 .skill-mf span {
     color: #4e4e4e;
     font-size: 1rem;
@@ -140,7 +141,7 @@ h6 {
 
 .progress {
     background-color: #cde1f8;
-    margin: 0.75rem 0 0.75rem 0;
+    margin: 0.75rem 0;
     border-radius: 0;
     height: 0.75rem;
     position: relative;
@@ -293,6 +294,33 @@ h6 {
 .skill-mf {
     text-align: left;
     font-size: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .about-mf .about-img {
+        width: 50%;
+        margin: 0 auto 1rem auto;
+    }
+
+    .about-info p{ margin: 0.5rem; }
+
+    .about-info {
+        text-align: left;
+        font-size: 0.8rem;
+        margin: 0 0 12% 12%;
+    }
+
+    .skill-mf span { font-size: 0.8rem; }
+
+    .progress {
+        margin: 0.5rem 0;
+        height: 0.5rem;
+    }
+
+    .title-left { font-size: 1.25rem; }
+
+    .lead { font-size: 0.8rem }
 }
 
 .exp-img {
