@@ -3,7 +3,8 @@ var myFullpage = new fullpage('#fullpage', {
 	sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
 	anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
 	menu:'menu',
-	lazyLoad: true
+	lazyLoad: true,
+	scrollBar: true
 });
 
 
