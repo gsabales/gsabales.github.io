@@ -38,17 +38,16 @@
 				}
 			);
 
+	window.addEventListener("load", function () {
+		const loader = document.querySelector(".loader");
+		loader.className += " hidden";
+	})
 
-	$(".box-about-me").tilt({
-		maxTilt: 3,
-		scale: 1.1
-	});
-
-	$(".box-skills").tilt({
-		maxTilt: 3,
-	});
-
-	$(".nav-item").click(function () {
-		if ($("#btnCollapse").css('display')!='none')
-			$("#btnCollapse").click();
-	});
+	// $(".box-about-me").tilt({
+	// 	maxTilt: 3,
+	// 	scale: 1.1
+	// });
+	//
+	// $(".box-skills").tilt({
+	// 	maxTilt: 3,
+	// });
