@@ -217,6 +217,7 @@ h6 {
 }
 
 .box-shadow-full {
+    opacity: 0.9;
     padding: 3rem 1.25rem;
     position: relative;
     background-color: #fff;
@@ -320,7 +321,18 @@ h6 {
 
     .title-left { font-size: 1.25rem; }
 
-    .lead { font-size: 0.8rem }
+    .lead { font-size: 0.9rem }
+
+    .title-a {
+        font-size: 2rem;
+        margin-top: 20px;
+    }
+
+    .subtitle-a {
+        color: #4e4e4e;
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
 }
 
 .exp-img {
@@ -356,11 +368,22 @@ h6 {
     margin: 0 0 0.5rem 1rem;
 }
 
+@media only screen and (max-width: 600px) {
+    .exp-img {
+        margin: 20% 0;
+    }
+
+    .featured-box-col1 {
+        margin: 0 0 10px 15px;
+    }
+}
+
 /*======================================
 //--//-->   SERVICES
 ======================================*/
 
 .service-box {
+    opacity: 0.9;
     background-color: #fff;
     padding: 2rem 1rem;
     border-radius: 1rem;
@@ -414,6 +437,31 @@ h6 {
     text-align: center;
     box-shadow: 0 0 0 8px #0078ff;
     display: block;
+}
+
+@media only screen and (max-width: 600px) {
+    .service-box {
+        width: 80%;
+        margin: 1rem auto;
+        padding: 1rem 1rem;
+    }
+
+    .ico-circle {
+        height: 60px;
+        width: 60px;
+        font-size: 2.5rem;
+        box-shadow: 0 0 0 6px #0078ff;
+    }
+
+    .service-box .ico-circle {
+        transition: all 500ms ease;
+        font-size: 2.5rem;
+    }
+
+    .service-box .s-description{
+        font-size: 0.9rem;
+    }
+
 }
 
 /*======================================
@@ -909,6 +957,22 @@ footer .credits a {
     border-radius: .3rem;
 }
 
+@media only screen and (max-width: 600px) {
+    .button-big {
+        padding: 0.8rem 1rem;
+        font-size: 1rem;
+        margin: 5px 0;
+    }
 
+    .contact-list {
+        font-size: 0.8rem;
+    }
+
+    .socials .ico-circle {
+        height: 35px;
+        width: 35px;
+        font-size: 1.8rem;
+    }
+}
 
 

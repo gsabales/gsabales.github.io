@@ -47,3 +47,8 @@
 	$(".box-skills").tilt({
 		maxTilt: 3,
 	});
+
+	$(".nav-item").click(function () {
+		if ($("#btnCollapse").css('display')!='none')
+			$("#btnCollapse").click();
+	});
